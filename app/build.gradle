@@ -55,4 +55,10 @@ dependencies {
 
     // KaKao SDK library
     implementation "com.kakao.sdk:v2-user:2.11.2" // 카카오 로그인
+
+    // Google login SDK library
+    implementation 'com.google.android.gms:play-services-auth:20.4.0'
+
+    // Naver login SDK library
+    implementation 'com.navercorp.nid:oauth:5.3.0' // jdk 11
 }
