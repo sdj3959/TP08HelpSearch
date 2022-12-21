@@ -3,12 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-<!--    MapView 배치 예정-->
+<!--    MapView 를 배치할 뷰그룹 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container_mapview">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Map Fragment"
-        android:layout_centerInParent="true"/>
+    </RelativeLayout>
 
 </RelativeLayout>
