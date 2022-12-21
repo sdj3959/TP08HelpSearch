@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:contentPadding="16dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="성동구청 개방 화장실"
+            android:id="@+id/tv_place_name"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="서울 성동구 왕십리로 성동구청"
+            android:layout_below="@id/tv_place_name"
+            android:id="@+id/tv_address"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500"
+            android:text="100m"
+            android:layout_alignParentRight="true"
+            android:id="@+id/tv_distance"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

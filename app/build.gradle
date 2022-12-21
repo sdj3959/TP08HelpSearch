@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -12,7 +13,7 @@ android {
         minSdk 23
         targetSdk 32
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -45,4 +46,27 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+
+    // Firebase core SDK library
+    implementation platform('com.google.firebase:firebase-bom:31.1.0')
+
+    // Firebase products SDK.
+    implementation 'com.google.firebase:firebase-firestore-ktx' //Cloud FireStore Database for Kotlin
+
+    // KaKao SDK library
+    implementation "com.kakao.sdk:v2-user:2.11.2" // 카카오 로그인
+
+    // Google login SDK library
+    implementation 'com.google.android.gms:play-services-auth:20.4.0'
+
+    // Naver login SDK library
+    implementation 'com.navercorp.nid:oauth:5.3.0' // jdk 11
+
+    // Google Fused Location API library
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+
+    // KaKao Map SDK... library jar..
+    implementation files('libs/libDaumMapAndroid.jar')
+
+
 }
